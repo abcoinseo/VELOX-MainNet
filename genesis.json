@@ -2,14 +2,12 @@
   "name": "VELOX Chain",
   "chainId": 18591223,
   "consensus": {
-    "type": "ibft",
-    "ibft": {}
+    "type": "dev"
   },
-  "bootnodes": [],
+  "blockGasLimit": 1000000000,
   "premine": {
     "0xD7e39d8bbE6FA5eE59Ff8a945D93E16deaC56210": {
       "balance": "1000000000000000000000000000"
     }
-  },
-  "blockGasLimit": 1000000000
+  }
 }
