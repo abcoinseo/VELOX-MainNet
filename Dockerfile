@@ -4,7 +4,9 @@ WORKDIR /app
 
 EXPOSE 8545 10000
 
-CMD ["sh", "-c", "\
+ENTRYPOINT []
+
+CMD sh -c "
 polygon-edge genesis \
 --chain-id 18591223 \
 --name 'VELOX Chain' \
@@ -17,5 +19,5 @@ polygon-edge server \
 --chain /tmp/data/genesis.json \
 --jsonrpc 0.0.0.0:8545 \
 --libp2p 0.0.0.0:10000 \
---seal \
-"]
+--seal
+"
